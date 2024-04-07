@@ -1,0 +1,518 @@
+/* Header */
+body {
+    background-color: #121212;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header img {
+    width: 100px;
+    height: 50px;
+}
+
+nav a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #C8C8C8;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+nav a[href="#Home"] {
+    font-weight: bold;
+    color: #A9E529;
+}
+
+div a img {
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Hamburger menu */
+.hamenu {
+    font-size: 24px;
+    display: none;
+}
+
+/* Menampilkan tombol hamburger saat lebar layar mencapai ukuran mobile */
+@media only screen and (max-width: 768px) {
+    .hamenu {
+        display: block; /* Menampilkan tombol hamburger */
+    }
+
+    .navbar {
+        display: none; /* Menyembunyikan menu navigasi saat tampilan mobile */
+    }
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero-section {
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.text-content {
+    width: 100%;
+    text-align: left; /* Menjadikan teks rata kiri pada layar kecil */
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+}
+
+.text-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.image-content {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Tambahan untuk membuat title dan deskripsi rata kiri */
+.text-content h1,
+.text-content p {
+    text-align: left;
+}
+
+.image-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+button {
+    background: linear-gradient(to right, #A9E529, #32401f);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Sidebar */
+.sidebar {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #141414;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar.active {
+    display: block;
+}
+
+.close-menu {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 180px;
+    font-size: 32px;
+    width: 100%;
+    background-color: #181424;
+}
+
+.close-menu i {
+    background-color: #181424;
+}
+
+.close-menu a:hover i {
+    color: #01EEFF;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #181424;
+}
+
+.sidebar a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: #181424;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.sidebar a:hover {
+    color: #01EEFF;
+}
+
+.close-ham {
+    align-items: flex-start;
+    width: 100%;
+}
+
+.close-ham a:hover {
+    color: #01EEFF;
+}
+
+/* About Me */
+.about-me h1 {
+    margin-top: 0px;
+    color: #A9E529;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.about-me p {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 50px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-left: 150px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background: linear-gradient(to right, #A9E529, #32401f);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Skills */
+.skills-section {
+    margin-top: 150px;
+}
+
+.skills-section h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: #ffffff;
+    margin-left: 150px;
+    text-align: left;
+}
+
+.skills-section div {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-section div img:first-child {
+    margin-right: auto;
+    margin-left: 150px;
+}
+
+.skills-section div img:last-child {
+    margin-left: auto;
+    margin-right: 150px;
+}
+
+.skills-section div img[src$="progress.png"] {
+    width: 385px;
+    height: 331px;
+}
+
+.skills-section div img[src$="logoapk.png"] {
+    width: 345px;
+    height: 323px;
+}
+
+/* Why Should you hire me */
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    color: #ffffff;
+    margin-left: 150px;
+    margin-top: 150px;
+}
+
+.title span {
+    color: #A9E529;
+}
+
+.description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0 150px;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+/* Testimoni */
+.testimonial-section h2,
+.testimonial-section h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.testimonial-section img {
+    display: block;
+    margin: 0 auto;
+}
+
+.testimonial-section .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.testimonial-section .container > div {
+    text-align: center;
+    width: 30%;
+}
+
+.testimonial-section p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.testimonial-section .container img {
+    width: 100px;
+}
+
+.testimonial-section .rectangle {
+    width: 543px;
+    height: 310px;
+    border-radius: 30px;
+    background-color: #141414;
+    padding: 20px;
+    margin-right: 30px;
+    box-shadow: 0px 4px 6px rgba(169, 229, 41, 0.5);
+    margin-top: -10px;
+}
+
+.testimonial-section .rectangle p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.testimonial-section .rectangle img {
+    margin-bottom: 30px;
+}
+
+.testimonial-section .rectangle p.name {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Portofolio */
+.portofolio-section h1 {
+    margin-top: 250px;
+    margin-bottom: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 580;
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.portofolio-section img {
+    width: 400px;
+    height: 270px;
+}
+
+.portofolio-section p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.portofolio-section .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.portofolio-section .container > div {
+    text-align: center;
+    width: 30%;
+}
+
+/* Footer */
+.footer {
+    margin-top: 250px;
+    background: linear-gradient(to bottom, #A7DA3B, #475627);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 20px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.footer button {
+    background-color: #A9E529;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .logo img {
+    margin-top: 70px;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.footer .description {
+    margin-left: 100px;
+    flex-grow: 1;
+}
+
+.footer .description p {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+.footer p,
+.footer li {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer h1,
+.footer h2,
+.footer h3,
+.footer h4,
+.footer h5,
+.footer h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.footer .section-footer {
+    display: flex;
+    align-items: center;
+}
+
+.footer .section-footer img {
+    margin-top: 70px;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.footer .section-footer img {
+    margin-right: 35px;
+}
+
+.footer .section-footer img:last-child {
+    margin-right: 0;
+}

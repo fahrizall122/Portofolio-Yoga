@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!---Boxicon Link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+        <img src="Element/logo_yoga.png" alt="Logo">
+    </div>
+    <nav class="navbar">
+        <a href="#Home">Home</a>
+        <a href="#About">About Me</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Portfolio">Portfolio</a>
+        <a href="#Contact">Contact</a>
+    </nav>
+ <a onclick="toggleMenu()" class="hamenu"><img src="element/humberger.png" alt="Hamburger Icon"></a>
+</header>
+
+<!--START HAMBURGER MENU-->
+<nav class="sidebar">
+    <div class="close-menu">
+        <a onclick="toggleMenu()"><i class='bx bx-x'></i></a>
+    </div>
+
+    <div class="menu-items">
+        <a href="#Home">Home</a>
+        <a href="#About">About Me</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Portfolio">Portfolio</a>
+        <a href="#Contact">Contact</a>
+    </div>
+
+    <div class="social-icons">
+        <a href="#"><img src="Element/linkedin.png" alt="LinkedIn" width="20" height="19"></a>
+        <a href="#"><img src="Element/github.png" alt="GitHub" width="20" height="19"></a>
+        <a href="#"><img src="Element/email.png" alt="Email" width="28" height="17"></a>
+    </div>
+</nav>
+<!--END HAMBURGER MENU-->
+
+<section class="hero-section">
+    <div class="text-content">
+        <h1>Graphic UI UX Designer</h1>
+        <p>
+            Saya adalah desainer UI/UX grafis junior yang bersemangat dengan kreativitas dan dedikasi untuk menciptakan pengalaman pengguna yang menarik dan intuitif. Dengan latar belakang pendidikan dalam desain dan pemahaman yang kuat tentang tren desain terkini, saya siap untuk memberikan kontribusi positif dalam menghadirkan solusi visual yang memukau dan fungsional.
+        </p>
+        <button>My Work</button>
+    </div>
+    <div class="image-content">
+        <img src="Element/Yogaa.png" alt="Yoga_Fahrizal" width="400">
+    </div>
+</section>
+
+<section class="about-me">
+    <h1>About Me</h1>
+    <div class="content-container">
+        <div class="image-container">
+            <img src="Element/yogafahrizal.png" alt="Yoga Fahrizal" width="300">
+        </div>
+        <div class="text-container">
+            <p>
+                Saya seorang mahasiswa Teknik Informatika dengan minat mendalam dalam desain visual, khususnya UI/UX. Memiliki beberapa pengalaman dalam proyek desain, saya berdedikasi untuk mengintegrasikan kreativitas dalam teknologi, menciptakan solusi yang inovatif dan memikat.
+            </p>
+            <button>Detail</button>
+        </div>
+    </div>
+</section>
+
+<section class="skills-section">
+   <h1>Skills</h1>
+    <div>
+        <img src="Element/progress.png" alt="Activity Image" width="100">
+        <img src="Element/logoapk.png" alt="My Image" width="100">
+    </div>
+</section>
+
+<section>
+    <h1 class="title">Why should you hire me?</h1>
+    <div style="clear: both;"></div>
+    <p class="description">
+        Saya memiliki pengalaman yang solid di bidang desain grafis dan menguasai berbagai tools editing seperti Figma, Photoshop, Adobe Illustrator, dan Canva. Kombinasi keterampilan desain dan keahlian dalam menggunakan tools tersebut memungkinkan saya memberikan kontribusi maksimal dalam proyek-proyek kreatif.
+    </p>
+</section>
+
+ <section class="testimonial-section">
+        <h2>Trusted Partner</h2>
+        <div style="text-align: center;">
+            <img src="Element/logospot.png" alt="Logo Spot" width="287" height="68" style="margin-top: 23px;">
+        </div>
+        <h1>Testimonials</h1>
+        <div class="container">
+            <div class="rectangle">
+                <p>"Desainer grafis ini sangat kreatif dan profesional. Karyanya memikat, inovatif, dan memberikan dampak visual yang luar biasa."</p>
+                <img src="Element/lisa.png" alt="Lalisa" width="100">
+                <p class="name">Lalisa<br>CEO LLOUD</p>
+            </div>
+            <div class="rectangle">
+                <p>Desain grafisnya luar biasa! Kreativitasnya memukau, detailnya sempurna, dan memberikan kesan profesional yang luar biasa. Bravo!</p>
+                <img src="Element/roses.png" alt="Rose'" width="100">
+                <p class="name">Rose'<br>CEO Odd Atelier</p>
+            </div>
+            <div class="rectangle">
+                <p>Desain grafisnya luar biasa! Kreativitasnya memukau, detailnya sempurna, dan memberikan kesan profesional yang luar biasa. Bravo!</p>
+                <img src="Element/jenie.png" alt="Kim Jennie" width="100">
+                <p class="name">Kim Jennie<br>CEO Blisso</p>
+            </div>
+        </div>
+    </section>
+
+
+<section class="portofolio-section">
+        <h1>Portofolio</h1>
+        <div class="container">
+            <div style="text-align: center; width: 30%;">
+                <img src="Element/ilustrator.png" alt="Illustrator" width="200">
+                <p>Illustrator</p>
+            </div>
+            <div style="text-align: center; width: 30%;">
+                <img src="Element/webdesign.png" alt="Web Design" width="200">
+                <p>Web Design</p>
+            </div>
+            <div style="text-align: center; width: 30%;">
+                <img src="Element/productdesign.png" alt="Product Design" width="200">
+                <p>Product Design</p>
+            </div>
+        </div>
+    </section>
+
+<footer class="footer">
+    <div class="container">
+        <h1>Let's Connect there</h1>
+        <button>Hire Me</button>
+    </div>
+    <div class="navigation-contact">
+        <div class="content navigation">
+            <p>Navigation:</p>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+        </div>
+        <div class="content contact">
+            <p>Kontak:</p>
+            <ul>
+                <li>+62 8579528123</li>
+                <li><a href="mailto:yfahrizal122@gmail.com">yfahrizal122@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="logo">
+        <img src="Element/logo_yoga.png" alt="Logo" width="293" height="132">
+    </div>
+    <section class="section-footer">
+        <div class="social-media">
+            <img src="Element/in.png" alt="LinkedIn" width="50">
+            <img src="Element/gth.png" alt="GitHub" width="50">
+            <img src="Element/ig.png" alt="Instagram" width="50">
+            <img src="Element/fb.png" alt="Facebook" width="50">
+        </div>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
