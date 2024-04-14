@@ -134,8 +134,8 @@ button:hover {
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
-    width: 250px;
+    height: 50vh;
+    width: 50px;
     z-index: 999;
     background-color: #141414;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
@@ -396,8 +396,11 @@ button:hover {
 }
 
 .portofolio-section img {
-    width: 400px;
-    height: 270px;
+    width: 400px; 
+    height: auto; 
+    margin-bottom: 50px; 
+    display: block; 
+    margin: 0 auto; 
 }
 
 .portofolio-section p {
@@ -418,6 +421,99 @@ button:hover {
     text-align: center;
     width: 30%;
 }
+
+/* Contact Me */
+#Contact * {
+    background-color: #141414;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#Contact .contact-content span {
+    color: #ffffff;
+}
+
+#Contact .contact-section {
+    padding: 0 80px;
+    height: 680px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Contact .contact-section h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #ffffff; /* ganti warna font menjadi putih */
+}
+
+#Contact .kiri-conta {
+    max-width: 400px;
+    float: left;
+    font-family: 'Poppins', 'Sans-serif';
+    font-size: 15px;
+}
+
+#Contact .kanan-conta {
+    float: right;
+    max-width: 500px;
+}
+
+#Contact .kanan-conta img {
+    width: 380px;
+    height: 380px;
+}
+
+#Contact .input-field input[type="text"] {
+    background-color: #BFBFBF;
+    height: 40px;
+    width: 400px;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-family: 'Poppins', 'Sans-serif';
+    color: black;
+}
+
+#Contact .textarea-field textarea {
+    background-color: #BFBFBF;
+    width: 400px;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-family: 'Poppins', 'Sans-serif';
+    color: black;
+}
+
+#Contact .submit-btn button {
+    color: white;
+    border-radius: 6px;
+    font-family: 'Poppins', 'Sans-serif';
+    height: 40px;
+    width: 100px;
+    margin-top: 20px;
+}
+
+#Contact .medsos {
+    display: flex;
+    flex-direction: column;
+}
+
+#Contact .medsos i {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#Contact .medsos a {
+    margin-bottom: 6px;
+    color: white;
+    font-size: 18px;
+}
+
+#Contact label.error {
+    color: red;
+    display: block;
+}
+
 
 /* Footer */
 .footer {
